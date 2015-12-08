@@ -11,14 +11,10 @@ def generate_random_enemy():
     enemy = RandomEnemyType()
     return enemy
 
-def generate_random_enemy_dragon():
-    RandomEnemyType = choice(dragon_types)
-    enemy = RandomEnemyType()
-    return enemy
 
 
 def generate_dragon_list(enemy_number):
-    enemy_list = [generate_random_enemy_dragon() for i in range(enemy_number)]
+    enemy_list = [generate_random_enemy() for i in range(enemy_number)]
     return enemy_list
 
 
